@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>コード進行クイズゲーム</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>🎵 コード進行クイズゲーム</h1>
+    <p class="lead">キーとローマ数字進行から、正しいコード進行を当てよう！</p>
+
+    <section class="panel status">
+      <div>スコア: <span id="score">0</span></div>
+      <div>連続正解: <span id="streak">0</span></div>
+      <div>問題: <span id="question-count">0</span></div>
+    </section>
+
+    <section class="panel quiz">
+      <h2 id="prompt">スタートを押して開始</h2>
+      <div id="choices" class="choices"></div>
+      <p id="feedback" class="feedback"></p>
+      <button id="next-btn" type="button">スタート / 次の問題</button>
+    </section>
+
+    <section class="panel help">
+      <h3>遊び方</h3>
+      <ul>
+        <li>表示されたキー・進行に合うコードの並びを1つ選択。</li>
+        <li>正解 +10 点、不正解 -5 点（最低 0 点）。</li>
+        <li>連続正解で気持ちよく練習！</li>
+      </ul>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
